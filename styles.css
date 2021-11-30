@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px auto;
+    width: 1000px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.block {
+    width: 420px;
+    height: 250px;
+    margin: 25px auto;
+    background-color: rgb(137, 219, 192);
+    border-radius: 9px;
+    box-shadow: -5px 5px 25px grey;
+    line-height: 9;
+    transform: translateX(-400%);
+    transition: all .5s ease-in-out;
+}
+
+.block:nth-child(2n) {
+    transform: translateX(400%);
+}
+
+.block.active {
+    transform: translateX(0%);
+    transition: all .3s ease-in-out;
+}
